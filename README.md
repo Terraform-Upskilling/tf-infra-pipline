@@ -1,5 +1,5 @@
 # Terraform 
-repository for aws terraform 
+repository for aws terraform s
 
 
 Deploy a single EC2 instance
