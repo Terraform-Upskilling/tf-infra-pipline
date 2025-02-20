@@ -1,7 +1,7 @@
-name: Terraform Destroy
+name: Manual Terraform Destroy
 
 on:
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:  # Allows only manual trigger
 
 permissions:
   contents: read
