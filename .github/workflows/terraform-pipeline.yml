@@ -5,7 +5,7 @@ on:
     branches:
       - "feature/felix/*"  # Allows triggering on any branch under feature/felix
   pull_request:
-  workflow_dispatch:  # Allows manual trigger
+  # workflow_dispatch:  # Allows manual trigger
 
 permissions:
   contents: read
