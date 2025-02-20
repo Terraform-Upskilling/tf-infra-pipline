@@ -44,5 +44,5 @@ jobs:
         run: terraform plan -out=tfplan
 
       - name: Terraform Apply (Main Branch)
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/feature/felix/task2'
         run: terraform apply -auto-approve tfplan
