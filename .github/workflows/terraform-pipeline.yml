@@ -31,18 +31,26 @@ jobs:
         with:
           terraform_version: 1.6.0  # Adjust this version if needed
 
+      - name: Navigate to VPC Directory
+        run: cd vpc
+
       - name: Terraform Init
         run: terraform init
+        working-directory: ./vpc
 
       - name: Terraform Format Check
         run: terraform fmt -check
+        working-directory: ./vpc
 
       - name: Terraform Validate
         run: terraform validate
+        working-directory: ./vpc
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
+        working-directory: ./vpc
 
       - name: Terraform Apply (Main Branch)
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve tfplan
+        working-directory: ./vpc
