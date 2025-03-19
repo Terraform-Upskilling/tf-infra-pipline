@@ -59,8 +59,7 @@ jobs:
           args: >
             -Dsonar.projectKey=sonar1
             -Dsonar.sources=app.py
-            -D-Dsonar.exclusions=**/tfplan
-            -X
+            
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
