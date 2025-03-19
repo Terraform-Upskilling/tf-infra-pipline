@@ -50,7 +50,7 @@ jobs:
         run: terraform plan -out=tfplan
         working-directory: ./vpc
 
-      - name: Terraform Apply (Main Branch)
-        # if: github.ref == 'refs/heads/feature/felix/*'
-        run: terraform apply -auto-approve tfplan
-        working-directory: ./vpc
+      # - name: Terraform Apply (Main Branch)
+      #   # if: github.ref == 'refs/heads/feature/felix/*'
+      #   run: terraform apply -auto-approve tfplan
+      #   working-directory: ./vpc
