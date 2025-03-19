@@ -58,7 +58,7 @@ jobs:
           projectBaseDir: .
           args: >
             -Dsonar.projectKey=sonar1
-            -Dsonar.sources=.
+            -Dsonar.sources=app.py
             -D-Dsonar.exclusions=**/tfplan
             -X
         env:
