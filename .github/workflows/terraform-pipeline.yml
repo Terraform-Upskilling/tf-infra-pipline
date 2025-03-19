@@ -57,8 +57,9 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.projectKey=Terraform
+            -Dsonar.projectKey=sonar1
             -Dsonar.sources=.
+            -Dsonar.language=terraform
             -X
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
