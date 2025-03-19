@@ -59,7 +59,7 @@ jobs:
           args: >
             -Dsonar.projectKey=sonar1
             -Dsonar.sources=.
-            -Dsonar.language=terraform
+            -D-Dsonar.exclusions=**/tfplan
             -X
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
